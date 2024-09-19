@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fe14837a34889ff0a8c344415b14b526 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fe14837a34889ff0a8c344415b14b526" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fe14837a34889ff0a8c344415b14b526 = L.map(
+                "map_fe14837a34889ff0a8c344415b14b526",
+                {
+                    center: [45.4404, 12.316],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5fa2eb2c1437001cb23b7286ed959ef6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5fa2eb2c1437001cb23b7286ed959ef6.addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var marker_9e96bf9b4806c72c9de78eb85a8cdd4e = L.marker(
+                [45.4407495, 12.3323089],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_9ea12eec8e7c6089b9dd6a5307768efb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9e96bf9b4806c72c9de78eb85a8cdd4e.setIcon(icon_9ea12eec8e7c6089b9dd6a5307768efb);
+        
+    
+        var popup_7d327419041f74f266fc5b87d26713ff = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_936d36faf9c3b2ef297f598a2709fa99 = $(`<div id="html_936d36faf9c3b2ef297f598a2709fa99" style="width: 100.0%; height: 100.0%;">Population: 13<br>Street: Calle  da Ca' Corner<br></div>`)[0];
+                popup_7d327419041f74f266fc5b87d26713ff.setContent(html_936d36faf9c3b2ef297f598a2709fa99);
+            
+        
+
+        marker_9e96bf9b4806c72c9de78eb85a8cdd4e.bindPopup(popup_7d327419041f74f266fc5b87d26713ff)
+        ;
+
+        
+    
+    
+            var marker_1a3a53277aa56c84b8c31d1362546f12 = L.marker(
+                [45.43758769999999, 12.3314628],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_ff3129ce9c7790e20342f4f38477afea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1a3a53277aa56c84b8c31d1362546f12.setIcon(icon_ff3129ce9c7790e20342f4f38477afea);
+        
+    
+        var popup_e0af06441a74d2d88e85f93047d55bbb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0f6758feae719c2376cc0c5cf133ea1a = $(`<div id="html_0f6758feae719c2376cc0c5cf133ea1a" style="width: 100.0%; height: 100.0%;">Population: 11<br>Street: Dietro la Chiesa alla Rivetta del Tentor<br></div>`)[0];
+                popup_e0af06441a74d2d88e85f93047d55bbb.setContent(html_0f6758feae719c2376cc0c5cf133ea1a);
+            
+        
+
+        marker_1a3a53277aa56c84b8c31d1362546f12.bindPopup(popup_e0af06441a74d2d88e85f93047d55bbb)
+        ;
+
+        
+    
+    
+            var marker_7419477106d7208608084cefe6d4f515 = L.marker(
+                [45.4381959, 12.3295682],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_91f716c311b2d9ebd10bfe9d12431ea4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7419477106d7208608084cefe6d4f515.setIcon(icon_91f716c311b2d9ebd10bfe9d12431ea4);
+        
+    
+        var popup_568553c383928bf60de67e5209e19b60 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4a3301964ba05385652a716507a92465 = $(`<div id="html_4a3301964ba05385652a716507a92465" style="width: 100.0%; height: 100.0%;">Population: 17<br>Street: Corte da Ca' Sanudo<br></div>`)[0];
+                popup_568553c383928bf60de67e5209e19b60.setContent(html_4a3301964ba05385652a716507a92465);
+            
+        
+
+        marker_7419477106d7208608084cefe6d4f515.bindPopup(popup_568553c383928bf60de67e5209e19b60)
+        ;
+
+        
+    
+    
+            var marker_400730afa04677c2c3e4c9859f76b6a5 = L.marker(
+                [45.438039, 12.3334351],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_ee8855cf6ca1166bec8b3ec5e5a81789 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_400730afa04677c2c3e4c9859f76b6a5.setIcon(icon_ee8855cf6ca1166bec8b3ec5e5a81789);
+        
+    
+        var popup_e5fb04f93c76d66491e126b5db622c37 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0611ca3537eadd2b9822cb3feb986551 = $(`<div id="html_0611ca3537eadd2b9822cb3feb986551" style="width: 100.0%; height: 100.0%;">Population: 6<br>Street: Segue Sul Campo di San Paolo<br></div>`)[0];
+                popup_e5fb04f93c76d66491e126b5db622c37.setContent(html_0611ca3537eadd2b9822cb3feb986551);
+            
+        
+
+        marker_400730afa04677c2c3e4c9859f76b6a5.bindPopup(popup_e5fb04f93c76d66491e126b5db622c37)
+        ;
+
+        
+    
+    
+            var marker_e000cdd1bad059f244edd0c5e7fbcec8 = L.marker(
+                [45.4398652, 12.3348972],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_faf51ffd6cc05aba972fbc6672804bc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e000cdd1bad059f244edd0c5e7fbcec8.setIcon(icon_faf51ffd6cc05aba972fbc6672804bc8);
+        
+    
+        var popup_297f518d6b10f3cf13a508e1ae31fdb3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_45c4e8207cd47753c80115e82cd107de = $(`<div id="html_45c4e8207cd47753c80115e82cd107de" style="width: 100.0%; height: 100.0%;">Population: 21<br>Street: Seguita al Campo<br></div>`)[0];
+                popup_297f518d6b10f3cf13a508e1ae31fdb3.setContent(html_45c4e8207cd47753c80115e82cd107de);
+            
+        
+
+        marker_e000cdd1bad059f244edd0c5e7fbcec8.bindPopup(popup_297f518d6b10f3cf13a508e1ae31fdb3)
+        ;
+
+        
+    
+    
+            var marker_ba9ff8f487112dae3478998bdae01e42 = L.marker(
+                [45.4385597, 12.3341234],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_fc6d3dae9b1a51f83c262eb11e49e38f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba9ff8f487112dae3478998bdae01e42.setIcon(icon_fc6d3dae9b1a51f83c262eb11e49e38f);
+        
+    
+        var popup_37526ba2439220a9bd08507952f283ac = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d2b9f0f6b25c61a4ab542cdf0ceb3772 = $(`<div id="html_d2b9f0f6b25c61a4ab542cdf0ceb3772" style="width: 100.0%; height: 100.0%;">Population: 1<br>Street: Calle della Madonna<br></div>`)[0];
+                popup_37526ba2439220a9bd08507952f283ac.setContent(html_d2b9f0f6b25c61a4ab542cdf0ceb3772);
+            
+        
+
+        marker_ba9ff8f487112dae3478998bdae01e42.bindPopup(popup_37526ba2439220a9bd08507952f283ac)
+        ;
+
+        
+    
+    
+            var marker_7577953ee1b21fa6d2296ec270290b0f = L.marker(
+                [45.4398566, 12.3318681],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_b36f26cce3f09f19b125857445714e08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7577953ee1b21fa6d2296ec270290b0f.setIcon(icon_b36f26cce3f09f19b125857445714e08);
+        
+    
+        var popup_3dc7dfa71a1b4e099388e6858c6417ef = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e31032d877bd2b4df5f3dcb7528b66b7 = $(`<div id="html_e31032d877bd2b4df5f3dcb7528b66b7" style="width: 100.0%; height: 100.0%;">Population: 21<br>Street: Zo' del Ponte della Madonna<br></div>`)[0];
+                popup_3dc7dfa71a1b4e099388e6858c6417ef.setContent(html_e31032d877bd2b4df5f3dcb7528b66b7);
+            
+        
+
+        marker_7577953ee1b21fa6d2296ec270290b0f.bindPopup(popup_3dc7dfa71a1b4e099388e6858c6417ef)
+        ;
+
+        
+    
+    
+            var marker_d85e3bb9525ff92d370815574fda90f8 = L.marker(
+                [45.4385597, 12.3341234],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_a2d0150d2746ced23dc29584864549c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d85e3bb9525ff92d370815574fda90f8.setIcon(icon_a2d0150d2746ced23dc29584864549c5);
+        
+    
+        var popup_da3ba2aba4a447c95cbc67027a15c0cd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cab8a410fdc33045fea7c688b2ab93c5 = $(`<div id="html_cab8a410fdc33045fea7c688b2ab93c5" style="width: 100.0%; height: 100.0%;">Population: 20<br>Street: Calle della Madonna<br></div>`)[0];
+                popup_da3ba2aba4a447c95cbc67027a15c0cd.setContent(html_cab8a410fdc33045fea7c688b2ab93c5);
+            
+        
+
+        marker_d85e3bb9525ff92d370815574fda90f8.bindPopup(popup_da3ba2aba4a447c95cbc67027a15c0cd)
+        ;
+
+        
+    
+    
+            var marker_ffb927ea08324fa064332e0ca3402a36 = L.marker(
+                [45.4362931, 12.3306084],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_cd64620e5c8be374f0fefa017101c41a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ffb927ea08324fa064332e0ca3402a36.setIcon(icon_cd64620e5c8be374f0fefa017101c41a);
+        
+    
+        var popup_2277623122fac732d01300937b2bb92a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ed3c7ec81b1a10a1209b1460e67d73e0 = $(`<div id="html_ed3c7ec81b1a10a1209b1460e67d73e0" style="width: 100.0%; height: 100.0%;">Population: 7<br>Street: Corte de Ca' Zane<br></div>`)[0];
+                popup_2277623122fac732d01300937b2bb92a.setContent(html_ed3c7ec81b1a10a1209b1460e67d73e0);
+            
+        
+
+        marker_ffb927ea08324fa064332e0ca3402a36.bindPopup(popup_2277623122fac732d01300937b2bb92a)
+        ;
+
+        
+    
+    
+            var marker_3d0512ff3135b9067d9ee98dcd42c949 = L.marker(
+                [45.4376241, 12.3299347],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_047cbf4f18cdda198b82311ac6dbd10b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d0512ff3135b9067d9ee98dcd42c949.setIcon(icon_047cbf4f18cdda198b82311ac6dbd10b);
+        
+    
+        var popup_eeb4a6613d1dcab6f8fd644301bca013 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f06ec131188a87bdef42a53f5ef95dca = $(`<div id="html_f06ec131188a87bdef42a53f5ef95dca" style="width: 100.0%; height: 100.0%;">Population: 7<br>Street: Segue sul Campo<br></div>`)[0];
+                popup_eeb4a6613d1dcab6f8fd644301bca013.setContent(html_f06ec131188a87bdef42a53f5ef95dca);
+            
+        
+
+        marker_3d0512ff3135b9067d9ee98dcd42c949.bindPopup(popup_eeb4a6613d1dcab6f8fd644301bca013)
+        ;
+
+        
+    
+    
+            var marker_b1a0281064acb946cf9a31261250ae79 = L.marker(
+                [45.437565, 12.3298437],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_24dad565413d38a53f4905604513579e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b1a0281064acb946cf9a31261250ae79.setIcon(icon_24dad565413d38a53f4905604513579e);
+        
+    
+        var popup_d09337966cc10a570b277a18d66ec7bf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_03c6235c3dd96c7af703db784883f3cf = $(`<div id="html_03c6235c3dd96c7af703db784883f3cf" style="width: 100.0%; height: 100.0%;">Population: 12<br>Street: Calle del Spicier<br></div>`)[0];
+                popup_d09337966cc10a570b277a18d66ec7bf.setContent(html_03c6235c3dd96c7af703db784883f3cf);
+            
+        
+
+        marker_b1a0281064acb946cf9a31261250ae79.bindPopup(popup_d09337966cc10a570b277a18d66ec7bf)
+        ;
+
+        
+    
+    
+            var marker_7d0e44adea7933133e8ffff340c91e0b = L.marker(
+                [45.437565, 12.3298437],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_5b07f4654e3ec133ccf7b78adea64551 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7d0e44adea7933133e8ffff340c91e0b.setIcon(icon_5b07f4654e3ec133ccf7b78adea64551);
+        
+    
+        var popup_33ace4f28f2fc763c5ccece7ca61e330 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3c47abe7f7a342ac09c1dc165032baf5 = $(`<div id="html_3c47abe7f7a342ac09c1dc165032baf5" style="width: 100.0%; height: 100.0%;">Population: 8<br>Street: Drio il magazen<br></div>`)[0];
+                popup_33ace4f28f2fc763c5ccece7ca61e330.setContent(html_3c47abe7f7a342ac09c1dc165032baf5);
+            
+        
+
+        marker_7d0e44adea7933133e8ffff340c91e0b.bindPopup(popup_33ace4f28f2fc763c5ccece7ca61e330)
+        ;
+
+        
+    
+    
+            var marker_4491281aa29e5352912e32dc2c99a8ac = L.marker(
+                [45.4365321, 12.3302214],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_23b8b33a5f44de1664042ea5ea273dc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4491281aa29e5352912e32dc2c99a8ac.setIcon(icon_23b8b33a5f44de1664042ea5ea273dc1);
+        
+    
+        var popup_be86142d98cb7f986acd94c66de6e8e2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2735cbd033fc443b5088feb480bf47dd = $(`<div id="html_2735cbd033fc443b5088feb480bf47dd" style="width: 100.0%; height: 100.0%;">Population: 15<br>Street: Corte scura drio il magazen<br></div>`)[0];
+                popup_be86142d98cb7f986acd94c66de6e8e2.setContent(html_2735cbd033fc443b5088feb480bf47dd);
+            
+        
+
+        marker_4491281aa29e5352912e32dc2c99a8ac.bindPopup(popup_be86142d98cb7f986acd94c66de6e8e2)
+        ;
+
+        
+    
+    
+            var marker_350ec613c1b9dbaa28aa2d93950b7bba = L.marker(
+                [45.437565, 12.3298437],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_db7304b2055bae9d5c1f85e274115e0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_350ec613c1b9dbaa28aa2d93950b7bba.setIcon(icon_db7304b2055bae9d5c1f85e274115e0f);
+        
+    
+        var popup_02d7c6c78658287e87d47cbf287440e5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b4756a1af9c298d7e8e7719a284121d5 = $(`<div id="html_b4756a1af9c298d7e8e7719a284121d5" style="width: 100.0%; height: 100.0%;">Population: 16<br>Street: Drio il Magazen<br></div>`)[0];
+                popup_02d7c6c78658287e87d47cbf287440e5.setContent(html_b4756a1af9c298d7e8e7719a284121d5);
+            
+        
+
+        marker_350ec613c1b9dbaa28aa2d93950b7bba.bindPopup(popup_02d7c6c78658287e87d47cbf287440e5)
+        ;
+
+        
+    
+    
+            var marker_7ebf6f01ec4f1ec07218c248ee5a82d7 = L.marker(
+                [45.4373612, 12.3299099],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_a848c06a5c1df4807b9b754d3aea98ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7ebf6f01ec4f1ec07218c248ee5a82d7.setIcon(icon_a848c06a5c1df4807b9b754d3aea98ef);
+        
+    
+        var popup_96e87a64221394c188d5b24ce775c5a1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_387cebba4c3b2826bc293bb8bef49c7a = $(`<div id="html_387cebba4c3b2826bc293bb8bef49c7a" style="width: 100.0%; height: 100.0%;">Population: 15<br>Street: Sul Ponte di San Polo<br></div>`)[0];
+                popup_96e87a64221394c188d5b24ce775c5a1.setContent(html_387cebba4c3b2826bc293bb8bef49c7a);
+            
+        
+
+        marker_7ebf6f01ec4f1ec07218c248ee5a82d7.bindPopup(popup_96e87a64221394c188d5b24ce775c5a1)
+        ;
+
+        
+    
+    
+            var marker_3ddb38cf16518b6411f865ddd0e1b039 = L.marker(
+                [45.43597, 12.3293026],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_a4ba68ce93a8aeda9e89e307cd400fdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3ddb38cf16518b6411f865ddd0e1b039.setIcon(icon_a4ba68ce93a8aeda9e89e307cd400fdd);
+        
+    
+        var popup_f14f8e053011c62e2733053c9d0628f3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6ecb574920c9a00d0b097a4aad27c021 = $(`<div id="html_6ecb574920c9a00d0b097a4aad27c021" style="width: 100.0%; height: 100.0%;">Population: 2<br>Street: Calle di Ca' Pisani<br></div>`)[0];
+                popup_f14f8e053011c62e2733053c9d0628f3.setContent(html_6ecb574920c9a00d0b097a4aad27c021);
+            
+        
+
+        marker_3ddb38cf16518b6411f865ddd0e1b039.bindPopup(popup_f14f8e053011c62e2733053c9d0628f3)
+        ;
+
+        
+    
+    
+            var marker_ef3d380991240a1426f01ba02c3d5547 = L.marker(
+                [45.4361767, 12.3284907],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_12088ce8959fc61b4fc791761391ddcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ef3d380991240a1426f01ba02c3d5547.setIcon(icon_12088ce8959fc61b4fc791761391ddcd);
+        
+    
+        var popup_a24bb600f679515c7625a8dc03495467 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c68249dc7ecfcf6d94dcabd38db8763c = $(`<div id="html_c68249dc7ecfcf6d94dcabd38db8763c" style="width: 100.0%; height: 100.0%;">Population: 5<br>Street: Calle da Ca' Cent'anni<br></div>`)[0];
+                popup_a24bb600f679515c7625a8dc03495467.setContent(html_c68249dc7ecfcf6d94dcabd38db8763c);
+            
+        
+
+        marker_ef3d380991240a1426f01ba02c3d5547.bindPopup(popup_a24bb600f679515c7625a8dc03495467)
+        ;
+
+        
+    
+    
+            var marker_d7d2eae175d2ca22be6d4dfa5111a4b4 = L.marker(
+                [45.4367702, 12.328801],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_6d10dc067d730e4bf99e068675dc9f91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d7d2eae175d2ca22be6d4dfa5111a4b4.setIcon(icon_6d10dc067d730e4bf99e068675dc9f91);
+        
+    
+        var popup_2b689d16e5ac5dd0cc12d4e4e0fc82cf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_72f4541a2924a3d88981ecf268379dae = $(`<div id="html_72f4541a2924a3d88981ecf268379dae" style="width: 100.0%; height: 100.0%;">Population: 14<br>Street: Calle dei Saoneri<br></div>`)[0];
+                popup_2b689d16e5ac5dd0cc12d4e4e0fc82cf.setContent(html_72f4541a2924a3d88981ecf268379dae);
+            
+        
+
+        marker_d7d2eae175d2ca22be6d4dfa5111a4b4.bindPopup(popup_2b689d16e5ac5dd0cc12d4e4e0fc82cf)
+        ;
+
+        
+    
+    
+            var marker_1d92b29160c948181b4ad1b013742707 = L.marker(
+                [45.4367702, 12.328801],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_fb189a019be3aef530f4579beecd3318 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1d92b29160c948181b4ad1b013742707.setIcon(icon_fb189a019be3aef530f4579beecd3318);
+        
+    
+        var popup_f9e019a39e3fd64f1e3c0122a9a4927a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_55737f4542ce13319ae7da66f25a5dcd = $(`<div id="html_55737f4542ce13319ae7da66f25a5dcd" style="width: 100.0%; height: 100.0%;">Population: 12<br>Street: Corte del Tagiapiera in Calle dei Saoneri<br></div>`)[0];
+                popup_f9e019a39e3fd64f1e3c0122a9a4927a.setContent(html_55737f4542ce13319ae7da66f25a5dcd);
+            
+        
+
+        marker_1d92b29160c948181b4ad1b013742707.bindPopup(popup_f9e019a39e3fd64f1e3c0122a9a4927a)
+        ;
+
+        
+    
+    
+            var marker_20c0b43cc264d94aa255078859e8fc99 = L.marker(
+                [45.4367702, 12.328801],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_7c1a0249b20fe62b8428a89842cc6316 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_20c0b43cc264d94aa255078859e8fc99.setIcon(icon_7c1a0249b20fe62b8428a89842cc6316);
+        
+    
+        var popup_cf4127e9cb1a8f40ac436e1bace3cd78 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_09df27a20329aec68cd8a51ba0d533b5 = $(`<div id="html_09df27a20329aec68cd8a51ba0d533b5" style="width: 100.0%; height: 100.0%;">Population: 14<br>Street: Ponte de' Saoneri<br></div>`)[0];
+                popup_cf4127e9cb1a8f40ac436e1bace3cd78.setContent(html_09df27a20329aec68cd8a51ba0d533b5);
+            
+        
+
+        marker_20c0b43cc264d94aa255078859e8fc99.bindPopup(popup_cf4127e9cb1a8f40ac436e1bace3cd78)
+        ;
+
+        
+    
+    
+            var marker_bcf9539bf0739c71c23653b5713aaa4f = L.marker(
+                [45.4374141, 12.3275872],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_1a83e4661f6cd76c34db632c87699998 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bcf9539bf0739c71c23653b5713aaa4f.setIcon(icon_1a83e4661f6cd76c34db632c87699998);
+        
+    
+        var popup_cdc532b760b949a9927c1ff50dcab8c6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4aa00d220419ffa6d356221cacc99c62 = $(`<div id="html_4aa00d220419ffa6d356221cacc99c62" style="width: 100.0%; height: 100.0%;">Population: 4<br>Street: Corte da Ca' Zen<br></div>`)[0];
+                popup_cdc532b760b949a9927c1ff50dcab8c6.setContent(html_4aa00d220419ffa6d356221cacc99c62);
+            
+        
+
+        marker_bcf9539bf0739c71c23653b5713aaa4f.bindPopup(popup_cdc532b760b949a9927c1ff50dcab8c6)
+        ;
+
+        
+    
+    
+            var marker_588b4b3be1bda8632ffb53a11a2e1c1a = L.marker(
+                [45.4405513, 12.3311288],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_2297b8aed864fc86eff084adcb308762 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_588b4b3be1bda8632ffb53a11a2e1c1a.setIcon(icon_2297b8aed864fc86eff084adcb308762);
+        
+    
+        var popup_7be9c84402aed2ac40591b2f9a900a8f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_23a56e0904405f8eff5a6073d7fc63d5 = $(`<div id="html_23a56e0904405f8eff5a6073d7fc63d5" style="width: 100.0%; height: 100.0%;">Population: 26<br>Street: Calle del Forner zo' del Ponte dei Saoneri<br></div>`)[0];
+                popup_7be9c84402aed2ac40591b2f9a900a8f.setContent(html_23a56e0904405f8eff5a6073d7fc63d5);
+            
+        
+
+        marker_588b4b3be1bda8632ffb53a11a2e1c1a.bindPopup(popup_7be9c84402aed2ac40591b2f9a900a8f)
+        ;
+
+        
+    
+    
+            var marker_176a2b00c3d78b26003cf0afaef7242e = L.marker(
+                [45.4367702, 12.328801],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_376580a1caf0ea5b8517cdba463740d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_176a2b00c3d78b26003cf0afaef7242e.setIcon(icon_376580a1caf0ea5b8517cdba463740d8);
+        
+    
+        var popup_f620ea306032ed52ef2a06cf2f052196 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5f3690559edca469a64ddbd7b0159b6e = $(`<div id="html_5f3690559edca469a64ddbd7b0159b6e" style="width: 100.0%; height: 100.0%;">Population: 0<br>Street: Segue la Calle dei Saoneri<br></div>`)[0];
+                popup_f620ea306032ed52ef2a06cf2f052196.setContent(html_5f3690559edca469a64ddbd7b0159b6e);
+            
+        
+
+        marker_176a2b00c3d78b26003cf0afaef7242e.bindPopup(popup_f620ea306032ed52ef2a06cf2f052196)
+        ;
+
+        
+    
+    
+            var marker_5bda9497eac8bbee1c7d8299a5e57463 = L.marker(
+                [45.437565, 12.3298437],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_553a41c66415a940c3228bded8615351 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5bda9497eac8bbee1c7d8299a5e57463.setIcon(icon_553a41c66415a940c3228bded8615351);
+        
+    
+        var popup_7bfb692d033bd0759a7d5a5c922b1cd3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_605c0309980fd2265d85e99b44e2875a = $(`<div id="html_605c0309980fd2265d85e99b44e2875a" style="width: 100.0%; height: 100.0%;">Population: 23<br>Street: Corte da Ca' Moro<br></div>`)[0];
+                popup_7bfb692d033bd0759a7d5a5c922b1cd3.setContent(html_605c0309980fd2265d85e99b44e2875a);
+            
+        
+
+        marker_5bda9497eac8bbee1c7d8299a5e57463.bindPopup(popup_7bfb692d033bd0759a7d5a5c922b1cd3)
+        ;
+
+        
+    
+    
+            var marker_ee7d4e1625ba2d9aa9d4a8218732eb33 = L.marker(
+                [45.437565, 12.3298437],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_b28dab99104228d0576f18a455bc94a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee7d4e1625ba2d9aa9d4a8218732eb33.setIcon(icon_b28dab99104228d0576f18a455bc94a8);
+        
+    
+        var popup_d36a7a6a944c08a2f74746c49bd94105 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_819b009770411e46b5168ebb8b107697 = $(`<div id="html_819b009770411e46b5168ebb8b107697" style="width: 100.0%; height: 100.0%;">Population: 4<br>Street: Case di rag.ne  del Primo Prete<br></div>`)[0];
+                popup_d36a7a6a944c08a2f74746c49bd94105.setContent(html_819b009770411e46b5168ebb8b107697);
+            
+        
+
+        marker_ee7d4e1625ba2d9aa9d4a8218732eb33.bindPopup(popup_d36a7a6a944c08a2f74746c49bd94105)
+        ;
+
+        
+    
+    
+            var marker_953e92f362ac3ffb7a0099e1c44c434d = L.marker(
+                [45.437565, 12.3298437],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_ba9366ef78b33ac67afba53a5a4952f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_953e92f362ac3ffb7a0099e1c44c434d.setIcon(icon_ba9366ef78b33ac67afba53a5a4952f4);
+        
+    
+        var popup_65a9e1d0977c9c9f48d4fd74d5c07de6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bcf5002ccb0f0f5d4d8741007d21ebf2 = $(`<div id="html_bcf5002ccb0f0f5d4d8741007d21ebf2" style="width: 100.0%; height: 100.0%;">Population: 4<br>Street: Case della Chiesa x prima di rag.ne della Piove<br></div>`)[0];
+                popup_65a9e1d0977c9c9f48d4fd74d5c07de6.setContent(html_bcf5002ccb0f0f5d4d8741007d21ebf2);
+            
+        
+
+        marker_953e92f362ac3ffb7a0099e1c44c434d.bindPopup(popup_65a9e1d0977c9c9f48d4fd74d5c07de6)
+        ;
+
+        
+    
+    
+            var marker_4b5736407c32f931bfe10317c3eb8952 = L.marker(
+                [45.437565, 12.3298437],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_aa8fc2f164541d5d5c7e34d901cb94ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4b5736407c32f931bfe10317c3eb8952.setIcon(icon_aa8fc2f164541d5d5c7e34d901cb94ac);
+        
+    
+        var popup_991f3e1fba54498a912ea2d979cb4fdc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7419bbbd456d4ba257faed54ac014610 = $(`<div id="html_7419bbbd456d4ba257faed54ac014610" style="width: 100.0%; height: 100.0%;">Population: 2<br>Street: Case di rag.ne del Secondo Prete<br></div>`)[0];
+                popup_991f3e1fba54498a912ea2d979cb4fdc.setContent(html_7419bbbd456d4ba257faed54ac014610);
+            
+        
+
+        marker_4b5736407c32f931bfe10317c3eb8952.bindPopup(popup_991f3e1fba54498a912ea2d979cb4fdc)
+        ;
+
+        
+    
+    
+            var marker_4033110318fdba2968aa9a1cb6bb2cc1 = L.marker(
+                [45.437565, 12.3298437],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_4c3b30561983b5552192d2294e0d0719 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4033110318fdba2968aa9a1cb6bb2cc1.setIcon(icon_4c3b30561983b5552192d2294e0d0719);
+        
+    
+        var popup_ffa3ca21439f418dea0c897cec1eb121 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4262357987a1242fb74376da94ff385a = $(`<div id="html_4262357987a1242fb74376da94ff385a" style="width: 100.0%; height: 100.0%;">Population: 3<br>Street: Case di rag.ne del Terzo Prete<br></div>`)[0];
+                popup_ffa3ca21439f418dea0c897cec1eb121.setContent(html_4262357987a1242fb74376da94ff385a);
+            
+        
+
+        marker_4033110318fdba2968aa9a1cb6bb2cc1.bindPopup(popup_ffa3ca21439f418dea0c897cec1eb121)
+        ;
+
+        
+    
+    
+            var marker_d5075a305e92e2a7676b4de02249ef21 = L.marker(
+                [45.4383558, 12.3313231],
+                {}
+            ).addTo(map_fe14837a34889ff0a8c344415b14b526);
+        
+    
+            var icon_72b4bbbf8ddd4f35c1069b540c3fcb0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d5075a305e92e2a7676b4de02249ef21.setIcon(icon_72b4bbbf8ddd4f35c1069b540c3fcb0e);
+        
+    
+        var popup_5eb716a3f2a83cbd281f13dad29f86c2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6743aa8d4a7b590d35df2d86b888a0ab = $(`<div id="html_6743aa8d4a7b590d35df2d86b888a0ab" style="width: 100.0%; height: 100.0%;">Population: 5 gazillions Flying Cows<br>Street: Magic Street of Waldo<br></div>`)[0];
+                popup_5eb716a3f2a83cbd281f13dad29f86c2.setContent(html_6743aa8d4a7b590d35df2d86b888a0ab);
+            
+        
+
+        marker_d5075a305e92e2a7676b4de02249ef21.bindPopup(popup_5eb716a3f2a83cbd281f13dad29f86c2)
+        ;
+
+        
+    
+</script>
+</html>
